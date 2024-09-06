@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="30dp"
+    android:backgroundTint="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/sfprodisplaybold"
+            android:textSize="24dp"
+            android:visibility="visible"
+            android:text="Question"
+            android:id="@+id/questionCardText"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/sfprodisplaybold"
+            android:visibility="gone"
+            android:textSize="24dp"
+            android:text="Answer"
+            android:id="@+id/answerCardText"></TextView>
+        <TextView
+            android:id="@+id/belowText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to See Answer"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/sfprodisplaybold"
+            android:textColor="@color/grey"
+            android:textSize="16dp"
+
+            />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

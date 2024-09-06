@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backdrop"
+    tools:context=".ReviewActivity">
+
+    <LinearLayout
+        android:id="@+id/HeadingBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="15dp"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:id="@+id/backButton"/>
+
+        <TextView
+            android:id="@+id/FolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Review Cards"
+            android:textSize="24dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/sfprodisplaybold"
+            android:layout_marginVertical="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardStackView"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        tools:listitem="@layout/show_card_layout"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/RepeatCardButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_close_24"
+            android:backgroundTint="@color/lightGrey"
+            android:background="@drawable/rounded_corner_shape"
+            android:layout_weight="1"
+            android:paddingHorizontal="15dp"
+            android:tooltipText="Today"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:layout_marginHorizontal="5dp"
+            android:paddingVertical="20dp"
+            />
+        <ImageButton
+            android:id="@+id/RepeatTodayButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_refresh_24"
+            android:backgroundTint="@color/lightGrey"
+            android:background="@drawable/rounded_corner_shape"
+            android:layout_weight="1"
+            android:paddingHorizontal="15dp"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:layout_marginHorizontal="5dp"
+            android:paddingVertical="20dp"
+            />
+        <ImageButton
+            android:id="@+id/RepeatTomorrowButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_done_24"
+            android:backgroundTint="@color/lightGrey"
+            android:background="@drawable/rounded_corner_shape"
+            android:layout_weight="1"
+            android:paddingHorizontal="15dp"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:layout_marginHorizontal="5dp"
+            android:paddingVertical="20dp"
+            />
+        <ImageButton
+            android:id="@+id/RepeatAfterIntervalButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_done_all_24"
+            android:backgroundTint="@color/lightGrey"
+            android:background="@drawable/rounded_corner_shape"
+            android:layout_weight="1"
+            android:paddingHorizontal="15dp"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:layout_marginHorizontal="5dp"
+            android:paddingVertical="20dp"
+            />
+    </LinearLayout>
+</LinearLayout>
